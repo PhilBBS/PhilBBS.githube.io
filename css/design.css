@@ -11,4 +11,7 @@ h1{
 .centerobject{
 	margin-left: auto;
 	margin-right: auto;
+
+.grid{
+	display:grid;
 }
