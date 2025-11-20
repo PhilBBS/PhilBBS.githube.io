@@ -25,7 +25,9 @@ h1{
 
 .titelbereich{
 	grid-column-start: 2;
-	grid-column-end: 3; 
+	grid-column-end: 3;
+	margin-right: auto;
+	margin-left: 0px;
 }
 
 .moodle_logo{
