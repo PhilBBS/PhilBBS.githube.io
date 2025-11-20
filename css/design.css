@@ -32,32 +32,22 @@ body{
 
 header{
 	grid-area: header;
-	margin-left: 0px;
-	margin-right: auto;
 }
 
 .suchfeld{
 	grid-area:suchfeld;
-	margin-left:auto;
-	margin-right: 0px;
 }
 
 nav{
 	grid-area:nav;
-	margin-left:auto;
-	margin-right: 0px;
 }
 
 main{
 	grid-area:main;
-	grid-column: 2;
-	grid-row:3;	
 }
 
 aside{
 	grid-area: aside;
-	margin-left:0px;
-	margin-right: auto;
 }
 
 footer{
