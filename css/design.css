@@ -32,10 +32,9 @@ h1{
 .moodle_logo{
 	grid-column-start: 3;
 	grid-column-end: 4;
+	margin-left:auto;
+	margin-right: 0px;
 
 body {
     background-color: grey;
-}
-	margin-left:auto;
-	margin-right: 0px;
 }
