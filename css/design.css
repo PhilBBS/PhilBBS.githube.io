@@ -7,7 +7,6 @@ h1{
 	letter-spacing:5px;
 	margin:50px;
 }
-
 .centerobject{
 	margin-left: auto;
 	margin-right: auto;
@@ -33,6 +32,10 @@ h1{
 .moodle_logo{
 	grid-column-start: 3;
 	grid-column-end: 4;
+
+body {
+    background-color: grey;
+}
 	margin-left:auto;
 	margin-right: 0px;
 }
