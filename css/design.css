@@ -31,7 +31,7 @@ body{
 }
 
 header{
-	grid-area: header
+	grid-area: header;
 	margin-left: 0px;
 	margin-right: auto;
 }
