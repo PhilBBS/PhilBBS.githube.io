@@ -18,49 +18,55 @@ h1{
 
 .grid{
 	display: grid;
+	grid-gap: 0.5em 0.5em;
+	height:100%;
+	width: 80%;
 	grid-template-columns: 2fr 6fr 2fr;
 	grid-template-rows: 20fr 5fr 60fr 15fr;
-	grid-gap: 0.5em 0.5em;
+	grid-template-areas:
+		"logo header suchfeld"
+		"platzhalter platzhalter platzhalter"
+		"nav main aside"
+		"footer footer footer"
 }
 .logo{
-	grid-column: 1; 
+	grid-area: logo 
 }
 
-.titelbereich{
-	grid-column: 2;
+header{
+	grid-area: header
 	margin-left: 0px;
 	margin-right: auto;
 }
 
 .suchfeld{
-	grid-column: 3;
+	grid-area:suchfeld;
 	margin-left:auto;
 	margin-right: 0px;
 }
 
-.navigation{
-	grid-column: 2;
-	grid-row:3;
+nav{
+	grid-area:nav;
 	margin-left:auto;
 	margin-right: 0px;
 }
 
-.hauptbereich{
+main{
+	grid-area:main;
 	grid-column: 2;
 	grid-row:3;	
 }
 
-.werbung{
-	grid-column: 3;
-	grid-row:3;
+aside{
+	grid-area: aside;
 	margin-left:0px;
 	margin-right: auto;
 }
 
-.oberpunkt-tabelle {
-	font-weight:bold;
+footer{
+	grid-area: footer;
 }
 
-.footer{
-	grid-row:4;
+.oberpunkt-tabelle {
+	font-weight:bold;
 }
