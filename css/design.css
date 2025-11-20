@@ -19,6 +19,8 @@ body{
 	grid-gap: 0.5em 0.5em;
 	height:100%;
 	width: 80%;
+	margin-right: auto;
+	margin-left: auto;
 	grid-template-columns: 2fr 6fr 2fr;
 	grid-template-rows: 20fr 5fr 60fr 15fr;
 	grid-template-areas:
