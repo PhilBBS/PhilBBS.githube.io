@@ -12,8 +12,26 @@ h1{
 	margin-left: auto;
 	margin-right: auto;
 
-.grid{
-	display:grid;
-	grid-template-rows:200px 1fr 100px; 
-	grid-template-columns:25% 25% 25% 25%; 
+.header {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr; /* drei Bereiche */
+  align-items: center;                /* vertikal zentrieren */
+  padding: 10px 20px;
+  background-color: #f0f0f0;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.actions {
+  display: flex;
+  justify-content: flex-end;
 }
