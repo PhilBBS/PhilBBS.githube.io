@@ -27,8 +27,8 @@ h1{
 
 .titelbereich{
 	grid-column: 2;
-	margin-right: auto;
 	margin-left: 0px;
+	margin-right: auto;
 }
 
 .suchfeld{
@@ -46,11 +46,15 @@ h1{
 
 .hauptbereich{
 	grid-column: 2;
-	grid-row:3;
-	margin-right: auto;
-	margin-left: 0px;	
+	grid-row:3;	
 }
 
+.werbung{
+	grid-column: 3;
+	grid-row:3;
+	margin-left:0px;
+	margin-right: auto;
+}
 
 .oberpunkt-tabelle {
 	font-weight:bold;
