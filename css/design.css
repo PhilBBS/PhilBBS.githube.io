@@ -30,42 +30,34 @@ body{
 
 .logo{
 	grid-area: logo;
-	background-color: red;
 }
 
 header{
 	grid-area: header;
-	background-color: red;
 }
 
 .suchfeld{
 	grid-area:suchfeld;
-	background-color: red;
 }
 
 .platzhalter{
 	grid-area: platzhalter;
-	background-color: yellow;
 }
 
 nav{
 	grid-area:nav;
-	background-color: red;
 }
 
 main{
 	grid-area:main;
-	background-color: red;
 }
 
 aside{
 	grid-area: aside;
-	background-color: red;
 }
 
 footer{
 	grid-area: footer;
-	background-color: red;
 }
 
 .oberpunkt-tabelle {
