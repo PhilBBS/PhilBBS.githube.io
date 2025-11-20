@@ -18,9 +18,7 @@ body{
 	display: grid;
 	grid-gap: 0.5em 0.5em;
 	height:100%;
-	width: 80%;
-	margin-right: auto;
-	margin-left: auto;
+	width:100%;
 	grid-template-columns: 2fr 6fr 2fr;
 	grid-template-rows: 20fr 5fr 60fr 15fr;
 	grid-template-areas:
@@ -29,6 +27,7 @@ body{
 		"nav main aside"
 		"footer footer footer"
 }
+
 .logo{
 	grid-area: logo;
 	background-color: red;
@@ -42,6 +41,11 @@ header{
 .suchfeld{
 	grid-area:suchfeld;
 	background-color: red;
+}
+
+.platzhalter{
+	grid-area: platzhalter;
+	background-color: yellow;
 }
 
 nav{
