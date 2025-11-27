@@ -68,7 +68,6 @@ aside{
 	grid-area: aside;
 	background-image: url("../bilder/tenor.gif"); 
 	background-size: auto; 
-	background-repeat:repeat-y; 
 	background-position:center;
 }
 
