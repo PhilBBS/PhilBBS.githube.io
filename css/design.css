@@ -70,6 +70,7 @@ aside{
 	background-image: url("../bilder/tenor.gif");
 	background-position: center;
 	background-size: cover;
+	background-repeat: repeat-y;
 }
 
 footer{
