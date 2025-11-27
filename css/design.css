@@ -23,11 +23,10 @@ body {
     background-color: #e1e1e1;
     display: grid;
     grid-gap: 0.5em 0.5em;
-    height: 100%;
-    width: 100%;
-	grid-auto-flow: dense;
+    height: 100vh;
+    width: 100vh;
     grid-template-columns: 2fr 6fr 2fr;
-    grid-template-rows: 20vh 5vh auto 75vh;
+    grid-template-rows: 20vh 5vh 1fr 75vh;
     grid-template-areas:
         "logo header suchfeld"
         "platzhalter platzhalter platzhalter"
