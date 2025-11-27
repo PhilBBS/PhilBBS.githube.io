@@ -20,7 +20,7 @@ body{
 	height:100%;
 	width:100%;
 	grid-template-columns: 2fr 6fr 2fr;
-	grid-template-rows: 20fr 5fr 60fr 15fr;
+	grid-template-rows: 20% 5% 1fr 15%;
 	grid-template-areas:
 		"logo header suchfeld"
 		"platzhalter platzhalter platzhalter"
@@ -30,34 +30,43 @@ body{
 
 .logo{
 	grid-area: logo;
+	background-color: red;
 }
 
 header{
 	grid-area: header;
+	background-color: green;
 }
 
 .suchfeld{
 	grid-area:suchfeld;
+	background-color: grey;
 }
 
 .platzhalter{
 	grid-area: platzhalter;
+	background-color: yellow;
 }
 
 nav{
 	grid-area:nav;
+	background-color: blue;
 }
 
 main{
 	grid-area:main;
+	background-color: pink;
 }
 
 aside{
 	grid-area: aside;
+	background-color: light blue;
+	background-image: url(../bilder/tenor.gif)
 }
 
 footer{
 	grid-area: footer;
+	background-color: cyan;
 }
 
 .oberpunkt-tabelle {
