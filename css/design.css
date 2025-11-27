@@ -110,6 +110,7 @@ header{
 .suchfeld{
 	grid-area:suchfeld;
 	background-color: grey;
+	text-align:center;
 }
 
 .platzhalter{
