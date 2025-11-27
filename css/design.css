@@ -26,8 +26,8 @@ body {
     height: 100%;
     width: 100%;
 	grid-auto-flow: dense;
-    grid-template-columns: 2fr 6fr 2fr;  /* Standard: 2fr, 6fr, 2fr */
-    grid-template-rows: 20vh 5vh 1fr 75vh;  /* Standard Zeilenhöhen */
+    grid-template-columns: 2fr 6fr 2fr;
+    grid-template-rows: 20vh 5vh 1fr 75vh;
     grid-template-areas:
         "logo header suchfeld"
         "platzhalter platzhalter platzhalter"
@@ -71,6 +71,8 @@ aside{
 	background-size: cover;
 	background-repeat: repeat-y;
 	background-position: center;
+	position: sticky;  /* sticky aktiviert das „haften“ */
+    top: 0;            /* Abstand zum oberen Rand */
 }
 
 footer{
