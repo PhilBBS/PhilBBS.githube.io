@@ -67,10 +67,10 @@ main{
 
 aside{
 	grid-area: aside;
-    background-image: url("../bilder/tenor.gif");
-    background-size: cover;       /* passt sich der Zelle an */
-    background-repeat: repeat-y;
-    background-position: center;
+	background-image: url("../bilder/tenor.gif"); 
+	background-size: 100%; 
+	background-repeat:repeat-y; 
+	background-position:center;
 }
 
 footer{
