@@ -130,8 +130,7 @@ main{
 aside{
 	grid-area: aside;
 	background-image: url("../bilder/tenor.gif");
-	background-size: 200px;	
-	background-attachment:fixed;
+	background-size: 100px;	
 	background-repeat:no-repeat;
 	background-position: center;
 
