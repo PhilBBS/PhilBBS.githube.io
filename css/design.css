@@ -25,7 +25,7 @@ body {
     grid-gap: 0.5em 0.5em;
     height: 100%;
     width: 100%;
-	grid-auto-flow: dense; /* With dense, the auto-placement algorithm fills unoccupied cells with items that fit.Here: Used to make aside the same side as main*/
+	grid-auto-flow: dense;
     grid-template-columns: 2fr 6fr 2fr;
     grid-template-rows: 20vh 5vh 1fr 75vh;
     grid-template-areas:
