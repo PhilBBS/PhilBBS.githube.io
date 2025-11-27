@@ -61,6 +61,7 @@ main{
 aside{
 	grid-area: aside;
 	background-color: light blue;
+	background-image: url(../bilder/tenor.gif)
 }
 
 footer{
