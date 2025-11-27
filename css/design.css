@@ -13,20 +13,89 @@ h1{
 	margin-right: auto;
 }
 
-body{
-	background-color: #e1e1e1;
-	display: grid;
-	grid-gap: 0.5em 0.5em;
-	height:100%;
-	width:100%;
-	grid-template-columns: 2fr 6fr 2fr;
-	grid-template-rows: 200px 50px 1fr 300px;
-	grid-template-areas:
-		"logo header suchfeld"
-		"platzhalter platzhalter platzhalter"
-		"nav main aside"
-		"footer footer footer"
+body {
+    background-color: #e1e1e1;
+    display: grid;
+    grid-gap: 0.5em 0.5em;
+    height: 100%;
+    width: 100%;
+    grid-template-columns: 2fr 6fr 2fr;  /* Standard: 2fr, 6fr, 2fr */
+    grid-template-rows: 200px 50px 1fr 300px;  /* Standard Zeilenhöhen */
+    grid-template-areas:
+        "logo header suchfeld"
+        "platzhalter platzhalter platzhalter"
+        "nav main aside"
+        "footer footer footer";
 }
+
+/* Für Bildschirme mit einer Breite von maximal 600px (Smartphones) */
+@media only screen and (max-width: 600px) {
+    body {
+        grid-template-columns: 1fr;  /* Eine Spalte */
+        grid-template-rows: auto auto auto auto auto; /* Automatische Zeilenhöhen */
+        grid-template-areas:
+            "logo"
+            "header"
+            "suchfeld"
+            "nav"
+            "main"
+            "aside"
+            "footer";
+    }
+}
+
+/* Für Tablets und kleine Laptops mit einer Breite von maximal 950px */
+@media only screen and (max-width: 950px) {
+    body {
+        grid-template-columns: 1fr 3fr 1fr;  /* Spaltenaufteilung für kleine Bildschirme */
+        grid-template-rows: 180px 60px 1fr 250px; /* Zeilenhöhe anpassen */
+        grid-template-areas:
+            "logo header suchfeld"
+            "platzhalter platzhalter platzhalter"
+            "nav main aside"
+            "footer footer footer";
+    }
+}
+
+/* Für Laptops und Desktop-Monitore mit einer Breite von mindestens 1280px */
+@media only screen and (min-width: 1280px) {
+    body {
+        grid-template-columns: 2fr 6fr 2fr;  /* Standard: 2fr, 6fr, 2fr */
+        grid-template-rows: 200px 50px 1fr 300px;  /* Standard Zeilenhöhe */
+        grid-template-areas:
+            "logo header suchfeld"
+            "platzhalter platzhalter platzhalter"
+            "nav main aside"
+            "footer footer footer";
+    }
+}
+
+/* Für größere Bildschirme (WQHD, z.B. 1440px) */
+@media only screen and (min-width: 1440px) {
+    body {
+        grid-template-columns: 1fr 8fr 1fr;  /* Breitere mittlere Spalte für mehr Platz */
+        grid-template-rows: 220px 70px 1fr 350px; /* Erhöhte Zeilenhöhen */
+        grid-template-areas:
+            "logo header suchfeld"
+            "platzhalter platzhalter platzhalter"
+            "nav main aside"
+            "footer footer footer";
+    }
+}
+
+/* Für UltraWide und 4K Monitore (ab 1600px) */
+@media only screen and (min-width: 1600px) {
+    body {
+        grid-template-columns: 1fr 8fr 1fr;  /* Breitere mittlere Spalte */
+        grid-template-rows: 250px 70px 1fr 400px; /* Noch größere Zeilenhöhen */
+        grid-template-areas:
+            "logo header suchfeld"
+            "platzhalter platzhalter platzhalter"
+            "nav main aside"
+            "footer footer footer";
+    }
+}
+
 
 .logo{
 	grid-area: logo;
