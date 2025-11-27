@@ -132,9 +132,7 @@ aside{
 	background-image: url("../bilder/tenor.gif");
 	background-size: 100%;	
 	background-repeat:no-repeat;
-	background-position: center;
-	align-self: stretch; 
-
+	background-position:center;
 }
 
 footer{
