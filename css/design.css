@@ -142,3 +142,11 @@ footer{
 .oberpunkt-tabelle {
 	font-weight:bold;
 }
+
+/* CSS für das Hervorheben des Zielbereichs */
+:target {
+    background-color: #ffeb3b; /* Gelbe Hintergrundfarbe für das angeklickte Ziel */
+    color: #000; /* Textfarbe ändern, wenn das Ziel aktiv ist */
+    padding: 5px;
+    border-radius: 5px;
+}
