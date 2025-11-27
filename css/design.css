@@ -35,6 +35,11 @@ body {
     "footer footer footer";
 }
 
+.sentinel {
+    grid-area: sentinel;
+    height: 1px;
+}
+
 .logo{
 	grid-area: logo;
 	background-color: red;
