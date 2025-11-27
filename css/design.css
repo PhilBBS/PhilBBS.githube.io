@@ -69,9 +69,7 @@ aside{
 	grid-area: aside;
 	background-image: url("../bilder/tenor.gif");
 	background-position: center;
-	height:200px;
-	position: sticky;  /* sticky aktiviert das „haften“ */
-    top: 0;            /* Abstand zum oberen Rand */
+	background-size: cover;
 }
 
 footer{
