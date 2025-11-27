@@ -20,7 +20,7 @@ body {
     height: 100%;
     width: 100%;
     grid-template-columns: 2fr 6fr 2fr;  /* Standard: 2fr, 6fr, 2fr */
-    grid-template-rows: 20vh 5vh 1fr 40vh;  /* Standard Zeilenhöhen */
+    grid-template-rows: 20vh 5vh 1fr 75vh;  /* Standard Zeilenhöhen */
     grid-template-areas:
         "logo header suchfeld"
         "platzhalter platzhalter platzhalter"
