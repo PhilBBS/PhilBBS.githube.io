@@ -37,7 +37,6 @@ body {
 
 .sentinel {
     grid-area: sentinel;
-    height: 1px;
 }
 
 .logo{
