@@ -131,7 +131,7 @@ aside{
 	min-height:300px
 	grid-area: aside;
 	background-image: url("../bilder/tenor.gif");
-	background-size: auto;	
+	background-size: 300px;	
 	background-repeat:no-repeat;
 	background-position: center;
 
