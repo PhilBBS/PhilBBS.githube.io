@@ -36,7 +36,8 @@ body {
 }
 
 .sentinel {
-    grid-area: sentinel;
+	grid-area: sentinel;
+	background-color: red;
 }
 
 .logo{
