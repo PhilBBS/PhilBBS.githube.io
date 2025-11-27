@@ -134,6 +134,7 @@ aside{
 	background-size: 300px;
 	background-attachment:fixed;
 	background-repeat:no-repeat;
+	background-position: center;
 }
 
 footer{
