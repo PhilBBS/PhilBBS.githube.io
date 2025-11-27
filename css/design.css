@@ -27,17 +27,18 @@ body {
     width: 100%;
     grid-template-columns: 2fr 6fr 2fr;
     grid-template-rows: 1px 20vh 5vh 1fr 75vh;
-				grid-template-areas:
-    "sentinel sentinel sentinel"
-    "logo header suchfeld"
-    "platzhalter platzhalter platzhalter"
-    "nav main aside"
-    "footer footer footer";
+    grid-template-areas:
+        "sentinel sentinel sentinel"
+        "logo header suchfeld"
+        "platzhalter platzhalter platzhalter"
+        "nav main aside"
+        "footer footer footer";
 }
 
 .sentinel {
 	grid-area: sentinel;
-	background-color: red;
+	height: 1px;
+	background-color: red; 
 }
 
 .logo{
@@ -88,10 +89,25 @@ footer{
 	font-weight:bold;
 }
 
-/* CSS für das Hervorheben des Zielbereichs */
 :target {
-    background-color: #ffeb3b; /* Gelbe Hintergrundfarbe für das angeklickte Ziel */
-    color: #000; /* Textfarbe ändern, wenn das Ziel aktiv ist */
+    background-color: #ffeb3b;
+    color: #000;
     padding: 5px;
     border-radius: 5px;
+}
+
+.logo,
+header,
+.suchfeld {
+    position: sticky;   / klebt am oberen Bildschirmrand /
+    top: 1px;           / wegen Sentinel /
+    z-index: 10;        / über allen anderen Elementen /
+    transition: all 0.3s ease; / sanfte Übergänge /
+}
+
+.sentinel:not(:in-view) ~ .logo,
+.sentinel:not(:in-view) ~ header,
+.sentinel:not(:in-view) ~ .suchfeld {
+    transform: scale(0.5);       / halbieren /
+    transform-origin: top left;  / schrumpft oben links */
 }
