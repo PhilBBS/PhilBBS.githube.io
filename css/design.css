@@ -62,7 +62,7 @@ header{
 
 nav{
 	grid-area:nav;
-	background-color: white;
+	background-color: green;
 }
 
 main{
