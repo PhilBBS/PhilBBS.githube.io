@@ -108,6 +108,7 @@ header,
 .sentinel:not(:in-view) ~ .logo,
 .sentinel:not(:in-view) ~ header,
 .sentinel:not(:in-view) ~ .suchfeld {
+	background-color:pink;
     transform: scale(0.5);       / halbieren /
     transform-origin: top left;  / schrumpft oben links */
 }
