@@ -43,17 +43,26 @@ body {
 
 .logo{
 	grid-area: logo;
-	background-color: red;
+	background-color: 
+	red;position: sticky;   / klebt am oberen Bildschirmrand /
+	top: 1px;           / wegen Sentinel /
+	z-index: 10;
 }
 
 header{
 	grid-area: header;
 	background-color: green;
+	red;position: sticky;   / klebt am oberen Bildschirmrand /
+	top: 1px;           / wegen Sentinel /
+	z-index: 10;
 }
 
 .suchfeld{
 	grid-area:suchfeld;
 	background-color: grey;
+	red;position: sticky;   / klebt am oberen Bildschirmrand /
+	top: 1px;           / wegen Sentinel /
+	z-index: 10;
 }
 
 .platzhalter{
@@ -94,15 +103,6 @@ footer{
     color: #000;
     padding: 5px;
     border-radius: 5px;
-}
-
-.logo,
-header,
-.suchfeld {
-    position: sticky;   / klebt am oberen Bildschirmrand /
-    top: 1px;           / wegen Sentinel /
-    z-index: 10;        / über allen anderen Elementen /
-    transition: all 0.3s ease; / sanfte Übergänge /
 }
 
 .sentinel:not(:in-view) ~ .logo,
