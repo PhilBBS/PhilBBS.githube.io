@@ -26,43 +26,33 @@ body {
 	height: 100%;
     width: 100%;
     grid-template-columns: 2fr 6fr 2fr;
-    grid-template-rows: 1px 20vh 5vh 1fr 75vh;
+    grid-template-rows: 20vh 5vh 1fr 75vh;
     grid-template-areas:
-        "sentinel sentinel sentinel"
         "logo header suchfeld"
         "platzhalter platzhalter platzhalter"
         "nav main aside"
         "footer footer footer";
 }
 
-.sentinel {
-	grid-area: sentinel;
-	height: 1px;
-	background-color: red; 
-}
-
 .logo{
 	grid-area: logo;
-	background-color: 
-	red;position: sticky;   / klebt am oberen Bildschirmrand /
-	top: 1px;           / wegen Sentinel /
-	z-index: 10;
+	background-color:	red;
+	position: sticky;
+	top: 1px;
 }
 
 header{
 	grid-area: header;
 	background-color: green;
-	red;position: sticky;   / klebt am oberen Bildschirmrand /
-	top: 1px;           / wegen Sentinel /
-	z-index: 10;
+	position: sticky;
+	top: 1px;
 }
 
 .suchfeld{
 	grid-area:suchfeld;
 	background-color: grey;
-	red;position: sticky;   / klebt am oberen Bildschirmrand /
-	top: 1px;           / wegen Sentinel /
-	z-index: 10;
+	position: sticky;
+	top: 1px;
 }
 
 .platzhalter{
@@ -103,12 +93,4 @@ footer{
     color: #000;
     padding: 5px;
     border-radius: 5px;
-}
-
-.sentinel:not(:in-view) ~ .logo,
-.sentinel:not(:in-view) ~ header,
-.sentinel:not(:in-view) ~ .suchfeld {
-	background-color:pink;
-    transform: scale(0.5);       / halbieren /
-    transform-origin: top left;  / schrumpft oben links */
 }
