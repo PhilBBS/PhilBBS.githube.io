@@ -25,8 +25,8 @@ body {
     grid-gap: 0.5em 0.5em;
 	height: 100%;
     width: 100%;
-    grid-template-columns: 2fr 6fr 2fr;
-    grid-template-rows: 20vh 5vh 1fr 75vh;
+    grid-template-columns: 4fr 12fr 3fr;
+    grid-template-rows: 20vh 5vh 1fr 40vh;
     grid-template-areas:
         "logo header suchfeld"
         "platzhalter platzhalter platzhalter"
