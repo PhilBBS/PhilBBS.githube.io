@@ -1,3 +1,4 @@
+/* ALLGEMEINE ELEMENTE */
 h1{
 	text-align: center;
 	color:red;
@@ -14,39 +15,57 @@ h1{
 }
 
 .corner-img{
-    position: absolute;
-    top: 0;
-    right: 0;
-}
-	
-body {
-    background-color: #e1e1e1;
-    display: grid;
-    grid-gap: 0.5em 0.5em;
-    height: 100%;
-    width: 100%;
-    grid-template-columns: 2fr 6fr 2fr;
-    grid-template-rows: 20vh 5vh 1fr 75vh;
-    grid-template-areas:
-        "logo header suchfeld"
-        "platzhalter platzhalter platzhalter"
-        "nav main aside"
-        "footer footer footer";
+    position: absolute;
+    top: 0;
+    right: 0;
 }
 
+/* GRID CONTAINER (BODY) */
+body {
+    background-color: #e1e1e1;
+    display: grid;
+    grid-gap: 0.5em 0.5em;
+    height: 100%;
+    width: 100%;
+    
+    /* BREITE bleibt FEST und wird NICHT animiert */
+    grid-template-columns: 4fr 12fr 3fr; 
+    /* START-Werte für die Höhe (wird animiert) */
+    grid-template-rows: 20vh 5vh 1fr 40vh; 
+    
+    grid-template-areas:
+        "logo header suchfeld"
+        "platzhalter platzhalter platzhalter"
+        "nav main aside"
+        "footer footer footer";
+        
+    /* Höhen-Animation für das GRID */
+    animation: grid-rows-shrink linear both; 
+    animation-timeline: scroll();
+    /* BINÄRER SCHALTER: Schaltet sofort zwischen 50px und 51px */
+    animation-range: 50px 51px;
+}
+
+/* GRID ZELLEN (BLEIBEN UNVERÄNDERT) */
 .logo{
 	grid-area: logo;
-	background-color: red;
+	background-color:	red;
+	position: sticky;
+	top: 0.5em;
 }
 
 header{
 	grid-area: header;
 	background-color: green;
+	position: sticky;
+	top: 0.5em;
 }
 
 .suchfeld{
 	grid-area:suchfeld;
 	background-color: grey;
+	position: sticky;
+	top: 0.5em;
 }
 
 .platzhalter{
@@ -56,7 +75,7 @@ header{
 
 nav{
 	grid-area:nav;
-	background-color: blue;
+	background-color: white;
 }
 
 main{
@@ -66,9 +85,8 @@ main{
 
 aside{
 	grid-area: aside;
-	background-image: url("../bilder/tenor.gif"); 
-	background-size: auto; 
-	background-repeat:repeat-y; 
+	background-image: url("../bilder/tenor.gif"); 
+	background-repeat:repeat-y; 
 	background-position:center;
 	height: 100%;
 }
@@ -82,10 +100,55 @@ footer{
 	font-weight:bold;
 }
 
-/* CSS für das Hervorheben des Zielbereichs */
 :target {
-    background-color: #ffeb3b; /* Gelbe Hintergrundfarbe für das angeklickte Ziel */
-    color: #000; /* Textfarbe ändern, wenn das Ziel aktiv ist */
-    padding: 5px;
-    border-radius: 5px;
+    background-color: #ffeb3b;
+    color: #000;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+---
+
+## 🔑 Keyframes und Animationen
+
+Hier sind die korrigierten Keyframes und Animations-Bindings:
+
+```css
+/* 1. KEYFRAMES (ENDZUSTÄNDE) */
+
+@keyframes shrink-header {
+    to { font-size: 40px; }
+}
+
+@keyframes shrink-logo {
+    to { transform: scale(0.6); }
+}
+
+/* NEU/KORREKT: Keyframes für das Schrumpfen der Grid-Höhe */
+@keyframes grid-rows-shrink {
+    to { 
+        /* Header-Row schrumpft (20vh -> 8vh), Platzhalter-Row verschwindet (5vh -> 0vh) */
+        grid-template-rows: 8vh 0vh 1fr 40vh; 
+    }
+}
+
+
+/* 2. ELEMENT-ANIMATIONSBINDINGS */
+
+header h1 {
+    font-size: 67px;
+    animation: shrink-header linear both;
+    animation-timeline: scroll();
+    /* KORREKTUR: Binärer Schalter für sofortige Anpassung */
+    animation-range: 50px 51px;
+}
+
+.logo img,
+.suchfeld img {
+    transform: scale(1);
+    transform-origin: center;
+    animation: shrink-logo linear both;
+    animation-timeline: scroll();
+    /* KORREKTUR: Binärer Schalter für sofortige Anpassung */
+    animation-range: 50px 51px;
 }
