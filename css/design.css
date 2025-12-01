@@ -100,28 +100,27 @@ footer{
     orientation: block;
 }
 
-/* Header + Logo + Suchfeld sollen schrumpfen */
+/* Header + Logo + Suchfeld schrumpfen */
 .logo img,
 header h1,
 .suchfeld img {
     transform-origin: center;
     animation: headerShrink 1s linear both;
     animation-timeline: shrink-header;
-    animation-range: 0% 20%;
+    animation-range: 5% 25%; /* <- Start erst wenn wirklich gescrollt wurde */
 }
 
-/* Animation definiert, wie stark verkleinert wird */
 @keyframes headerShrink {
     to {
         transform: scale(0.6);
     }
 }
 
-/* Optional: Header selbst etwas kompakter machen */
+/* Header Box schrumpft auch erst beim Scrollen */
 header {
     animation: headerBoxShrink 1s linear both;
     animation-timeline: shrink-header;
-    animation-range: 0% 20%;
+    animation-range: 5% 25%;
 }
 
 @keyframes headerBoxShrink {
