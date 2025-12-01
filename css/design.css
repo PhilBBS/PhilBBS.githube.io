@@ -94,38 +94,26 @@ footer{
     border-radius: 5px;
 }
 
-/* Scroll Timeline */
-@scroll-timeline shrink-header {
-    source: body;
-    orientation: block;
+/* Standardzustand: groß */
+header h1 {
+    font-size: 67px;
+    transition: font-size 0.25s ease;
 }
 
-/* Header + Logo + Suchfeld schrumpfen */
 .logo img,
-header h1,
 .suchfeld img {
+    transition: transform 0.25s ease;
     transform-origin: center;
-    animation: headerShrink 1s linear both;
-    animation-timeline: shrink-header;
-    animation-range: 5% 25%; /* <- Start erst wenn wirklich gescrollt wurde */
+    transform: scale(1);
 }
 
-@keyframes headerShrink {
-    to {
-        transform: scale(0.6);
-    }
+/* Wenn der Header sticky aktiv ist (nicht mehr im normalen Viewport)
+   → wird kleiner */
+body:not(:has(header:in-view)) header h1 {
+    font-size: 40px;
 }
 
-/* Header Box schrumpft auch erst beim Scrollen */
-header {
-    animation: headerBoxShrink 1s linear both;
-    animation-timeline: shrink-header;
-    animation-range: 5% 25%;
-}
-
-@keyframes headerBoxShrink {
-    to {
-        padding: 5px;
-        margin: 10px;
-    }
+body:not(:has(header:in-view)) .logo img,
+body:not(:has(header:in-view)) .suchfeld img {
+    transform: scale(0.6);
 }
