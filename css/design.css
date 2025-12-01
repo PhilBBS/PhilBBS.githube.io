@@ -94,26 +94,42 @@ footer{
     border-radius: 5px;
 }
 
-/* Standardzustand: groß */
+/* 1. Die End-Zustände als Animation definieren */
+@keyframes shrink-header {
+    to { font-size: 40px; }
+}
+
+@keyframes shrink-logo {
+    to { transform: scale(0.6); }
+}
+
+/* 2. Den Header an den Scrollbalken binden */
 header h1 {
+    /* Startwert */
     font-size: 67px;
-    transition: font-size 0.25s ease;
+    
+    /* Die Animation aufrufen */
+    animation: shrink-header linear both;
+    
+    /* Hier passiert die Magie: Animation an Scroll binden */
+    animation-timeline: scroll();
+    
+    /* Wann soll es passieren? Von 0px bis 100px Scroll-Tiefe */
+    animation-range: 0px 100px;
 }
 
 .logo img,
 .suchfeld img {
-    transition: transform 0.25s ease;
-    transform-origin: center;
+    /* Startwert */
     transform: scale(1);
-}
-
-/* Wenn der Header sticky aktiv ist (nicht mehr im normalen Viewport)
-   → wird kleiner */
-body:not(:has(header:in-view)) header h1 {
-    font-size: 40px;
-}
-
-body:not(:has(header:in-view)) .logo img,
-body:not(:has(header:in-view)) .suchfeld img {
-    transform: scale(0.6);
+    transform-origin: center;
+    
+    /* Animation aufrufen */
+    animation: shrink-logo linear both;
+    
+    /* An Scroll binden */
+    animation-timeline: scroll();
+    
+    /* Gleicher Bereich: Von 0px bis 100px */
+    animation-range: 0px 100px;
 }
