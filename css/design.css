@@ -18,20 +18,28 @@ h1{
     top: 0;
     right: 0;
 }
-	
-body {
+
+body{
     background-color: #e1e1e1;
     display: grid;
     grid-gap: 0.5em 0.5em;
-	height: 100%;
+    height: 100%;
     width: 100%;
-    grid-template-columns: 4fr 12fr 3fr;
+    
+    /* Standardwert / Startwert für Spalten */
+    grid-template-columns: 4fr 12fr 3fr; 
+    
     grid-template-rows: 20vh 5vh 1fr 40vh;
     grid-template-areas:
         "logo header suchfeld"
         "platzhalter platzhalter platzhalter"
         "nav main aside"
         "footer footer footer";
+        
+    /* NEU: Scroll-Driven Animation für Grid-Spalten */
+    animation: grid-columns-shrink linear both;
+    animation-timeline: scroll();
+    animation-range: 0px 100px;
 }
 
 .logo{
@@ -132,4 +140,12 @@ header h1 {
     
     /* Gleicher Bereich: Von 0px bis 100px */
     animation-range: 0px 100px;
+}
+
+/* 3. NEUE Keyframes für das Schrumpfen der Grid-Spalten */
+@keyframes grid-columns-shrink {
+    to { 
+        /* Die erste Spalte wird von 4fr auf 1fr reduziert */
+        grid-template-columns: 1fr 12fr 3fr; 
+    }
 }
