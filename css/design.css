@@ -38,21 +38,21 @@ body {
 	grid-area: logo;
 	background-color:	red;
 	position: sticky;
-	top: 1px;
+	top: 0.5em;
 }
 
 header{
 	grid-area: header;
 	background-color: green;
 	position: sticky;
-	top: 1px;
+	top: 0.5em;
 }
 
 .suchfeld{
 	grid-area:suchfeld;
 	background-color: grey;
 	position: sticky;
-	top: 1px;
+	top: 0.5em;
 }
 
 .platzhalter{
