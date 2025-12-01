@@ -93,3 +93,40 @@ footer{
     padding: 5px;
     border-radius: 5px;
 }
+
+/* Scroll Timeline */
+@scroll-timeline shrink-header {
+    source: body;
+    orientation: block;
+}
+
+/* Header + Logo + Suchfeld sollen schrumpfen */
+.logo img,
+header h1,
+.suchfeld img {
+    transform-origin: center;
+    animation: headerShrink 1s linear both;
+    animation-timeline: shrink-header;
+    animation-range: 0% 20%;
+}
+
+/* Animation definiert, wie stark verkleinert wird */
+@keyframes headerShrink {
+    to {
+        transform: scale(0.6);
+    }
+}
+
+/* Optional: Header selbst etwas kompakter machen */
+header {
+    animation: headerBoxShrink 1s linear both;
+    animation-timeline: shrink-header;
+    animation-range: 0% 20%;
+}
+
+@keyframes headerBoxShrink {
+    to {
+        padding: 5px;
+        margin: 10px;
+    }
+}
