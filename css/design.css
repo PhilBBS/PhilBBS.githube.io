@@ -61,7 +61,7 @@ body {
 .logo { 
     display: block;
     width: 400px;    
-    height: 150px;
+    height: auto;
     grid-area: logo; 
     background-image: url("../bilder/Alphabet_Inc_Logo.png");
     background-size: cover; 
@@ -76,6 +76,9 @@ header {
 }
 
 .suchfeld { 
+    display: block;
+    width: 200px;    
+    height: auto;
     grid-area: suchfeld; 
     background-image: url("../bilder/hauptlogo.png"); 
     background-size: cover; 
