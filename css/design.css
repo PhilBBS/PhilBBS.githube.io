@@ -20,7 +20,6 @@ h1 {
     text-align: center;
     
     /* Responsivität (clamp) */
-    /* Schriftgröße: Minimum 32px, Ideal 8% der Breite, Maximum 67px */
     font-size: clamp(32px, 8vw, 67px); 
     letter-spacing: clamp(2px, 1vw, 5px);
     margin: clamp(20px, 4vw, 50px);
@@ -32,10 +31,11 @@ h1 {
 }
 
 .corner-img {
+    /* Diese Klasse ist weiterhin für absolute Positionierung des Bildes, 
+       falls es als reines <img> verwendet wird. */
     position: absolute;
     top: 0;
     right: 0;
-    /* max-width: 20% sorgt hier für Skalierung relativ zum Viewport */
     max-width: 20%; 
 }
 
@@ -52,7 +52,7 @@ h1 {
 }
 
 /* =======================================
-   GRID LAYOUT & ZELLEN-FARBEN
+   GRID LAYOUT & ZELLEN-HINTERGRÜNDE
    ======================================= */
 
 body {
@@ -81,31 +81,39 @@ body {
         "footer";
 }
 
-/* Elementzuweisung und Farbvisualisierung (Mobile & Desktop) */
+/* Elementzuweisung und Hintergrundbilder */
 
 .logo { 
     grid-area: logo; 
-    background-color: #FFD700; /* Gold */
+    
+    /* LOGO: Alphabet_Inc_Logo.png */
+    background-image: url("bilder/Alphabet_Inc_Logo.png");
+    background-size: contain; /* Skaliert das Bild, sodass es komplett sichtbar ist */
+    background-repeat: no-repeat;
+    background-position: center; /* Zentriert das Bild in der Zelle */
 }
 
 header { 
     grid-area: header; 
-    background-color: #ADD8E6; /* Hellblau */
 }
 
 .suchfeld { 
     grid-area: suchfeld; 
-    background-color: #90EE90; /* Hellgrün */
+    
+    /* SUCHFELD / HAUPTLOGO: hauptlogo.png */
+    background-image: url("bilder/hauptlogo.png"); 
+    background-size: contain; /* Stellt sicher, dass das Icon skaliert wird */
+    background-repeat: no-repeat;
+    background-position: center; 
 }
 
 nav { 
     grid-area: nav; 
-    background-color: #FFA07A; /* Helles Lachsrot */
 }
 
 main { 
     grid-area: main; 
-    background-color: #FFFFFF; /* Weiß (Hauptinhaltsbereich) */
+    background-color: #FFFFFF; /* Hauptinhaltsbereich bleibt weiß */
     border: 1px solid #ccc;
 }
 
@@ -115,9 +123,8 @@ aside {
     min-height: 200px;
     
     /* Hintergrund-Eigenschaften */
-    background-color: rgba(240, 230, 140, 0.5); /* Semi-transparentes Khaki */
+    /* Der Hintergrund des Aside-Elements bleibt, wie er war (GIF) */
     background-image: url("../bilder/tenor.gif"); 
-    /* Für Hintergrundbilder, nutzt man background-size: cover/contain für Responsivität */
     background-size: auto; 
     background-repeat: repeat-y; 
     background-position: center;
@@ -125,14 +132,12 @@ aside {
 
 footer { 
     grid-area: footer; 
-    background-color: #A9A9A9; /* Dunkelgrau */
 }
 
 /* Platzhalter: Auf Mobile nicht sichtbar (wird in der Media Query wieder eingeblendet) */
 .platzhalter {
     grid-area: platzhalter;
     display: none; 
-    background-color: #F08080; /* Heller Korallton */
 }
 
 
@@ -144,7 +149,9 @@ footer {
     body {
         /* Desktop Grid Definition (3 Spalten) */
         grid-template-columns: 2fr 6fr 2fr;
-        grid-template-rows: 20vh 5vh 1fr 20vh; 
+        
+        /* HÖHENANPASSUNG: Erste Zeile 8vh für ein besseres Aspect Ratio */
+        grid-template-rows: 8vh 5vh 1fr 20vh; 
         
         /* Desktop Area Definition */
         grid-template-areas:
