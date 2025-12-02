@@ -112,7 +112,7 @@ footer {
 .platzhalter {
     grid-area: platzhalter;
     min-height: 1em; 
-    background-color: black;
+    background-color: grey;
 }
 
 @media (min-width: 768px) {
