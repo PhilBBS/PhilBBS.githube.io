@@ -67,7 +67,8 @@ body {
     background-image: url("../bilder/Alphabet_Inc_Logo.png");
     background-size: cover; 
     background-repeat: no-repeat;
-    background-position: center; 
+    background-position: center;
+    background-color: blue;
 }
 
 header { 
