@@ -12,7 +12,7 @@ h1 {
     font-size: clamp(32px, 8vw, 67px); 
     letter-spacing: clamp(2px, 1vw, 5px);
     margin: 0 clamp(20px, 4vw, 50px); 
-
+    margin-top: 5%
 }
 
 .centerobject {
@@ -31,15 +31,18 @@ h1 {
     font-weight: bold;
 }
 
+a{
+    text-decoration: none;
+    color:black
+}
+
 :target {
-    background-color: #ffeb3b;
-    color: #000;
+    border: 2px solid yellow;
+    box-shadow: 0 0 10px rgba(255, 255, 0, 0.5);
     padding: 5px;
-    border-radius: 5px;
 }
 
 body {
-    background-color: #e1e1e1;
     margin: 0; 
     width: 100%;
     min-height: 100vh;
@@ -58,6 +61,15 @@ body {
         "footer";
 }
 
+.platzhalter {
+    grid-area: platzhalter;
+    display: grid;
+    align-items: center;
+    text-align: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 0.5em
+}
+
 .logo { 
     display: block;
     width: auto;    
@@ -67,12 +79,10 @@ body {
     background-size: contain; 
     background-repeat: no-repeat;
     background-position: top left;
-  
 }
 
 header { 
     grid-area: header; 
-    background-color:green;
 }
 
 .suchfeld { 
@@ -87,13 +97,11 @@ header {
 }
 
 nav { 
-    grid-area: nav; 
-    background-color:yellow;
+    grid-area: nav;
 }
 
 main { 
-    grid-area: main; 
-    background-color: #FFFFFF; 
+    grid-area: main;
     border: 1px solid #ccc;
 }
 
@@ -109,23 +117,12 @@ aside {
 
 footer { 
     grid-area: footer; 
-    background-color:red;
-}
-
-.platzhalter {
-    grid-area: platzhalter;
-    min-height: 1em; 
-    background-color: grey;
-    display: grid;
-    justify-content: center;
-    align-items: center;  
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 0.5em
 }
 
 @media (min-width: 768px) {
     body {
-        grid-template-columns: 3fr 6fr 2fr;
+        background-color: #ccc;
+        grid-template-columns: 2fr 5fr 2fr;
         grid-template-rows: Minmax(75px, 16vh) 5vh 1fr 20vh; 
         grid-template-areas:
             "logo header suchfeld"
