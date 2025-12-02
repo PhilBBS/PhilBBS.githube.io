@@ -114,7 +114,7 @@ footer {
 @media (min-width: 768px) {
     body {
         grid-template-columns: 2fr 6fr 2fr;
-        grid-template-rows: 16vh 5vh 1fr 20vh; 
+        grid-template-rows: Minmax(75px, 16vh) 5vh 1fr 20vh; 
         grid-template-areas:
             "logo header suchfeld"
             "platzhalter platzhalter platzhalter"
