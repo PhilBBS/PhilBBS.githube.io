@@ -60,8 +60,6 @@ body {
 
 .logo { 
     display: block;
-    width: 200px;    
-    height: 100px;
     grid-area: logo; 
     background-image: url("../bilder/Alphabet_Inc_Logo.png");
     background-size: cover; 
