@@ -121,7 +121,7 @@ footer {
         grid-template-rows: Minmax(75px, 16vh) 5vh 1fr 20vh; 
         grid-template-areas:
             "logo header suchfeld"
-            "platzhalter platzhalter platzhalter"
+            "platzhalter1 platzhalter2 platzhalter3"
             "nav main aside"
             "footer footer footer";
     }
