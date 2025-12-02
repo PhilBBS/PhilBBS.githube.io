@@ -1,19 +1,8 @@
 /* =======================================
-   GLOBALE EINSTELLUNGEN & RESPONSIVE BILDER
-   ======================================= */
-
-img {
-    max-width: 100%; 
-    height: auto;    
-    display: block; 
-}
-
-/* =======================================
    BASIS-EINSTELLUNGEN & TYPOGRAFIE
    ======================================= */
 
 h1 {
-    /* Typografie & Farbe */
     font-family: cursive;
     font-style: italic;
     color: red;
@@ -81,12 +70,8 @@ body {
         "footer";
 }
 
-/* Elementzuweisung und Hintergrundbilder */
-
 .logo { 
     grid-area: logo; 
-    
-    /* LOGO: Alphabet_Inc_Logo.png */
     background-image: url("bilder/Alphabet_Inc_Logo.png");
     background-size: contain; /* Skaliert das Bild, sodass es komplett sichtbar ist */
     background-repeat: no-repeat;
@@ -121,9 +106,6 @@ aside {
     grid-area: aside;
     height: 100%;
     min-height: 200px;
-    
-    /* Hintergrund-Eigenschaften */
-    /* Der Hintergrund des Aside-Elements bleibt, wie er war (GIF) */
     background-image: url("../bilder/tenor.gif"); 
     background-size: auto; 
     background-repeat: repeat-y; 
