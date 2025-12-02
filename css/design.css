@@ -36,32 +36,26 @@ body {
 
 .logo{
 	grid-area: logo;
-	background-color: red;
 }
 
 header{
 	grid-area: header;
-	background-color: green;
 }
 
 .suchfeld{
 	grid-area:suchfeld;
-	background-color: grey;
 }
 
 .platzhalter{
 	grid-area: platzhalter;
-	background-color: yellow;
 }
 
 nav{
 	grid-area:nav;
-	background-color: blue;
 }
 
 main{
 	grid-area:main;
-	background-color: pink;
 }
 
 aside{
@@ -75,7 +69,6 @@ aside{
 
 footer{
 	grid-area: footer;
-	background-color: cyan;
 }
 
 .oberpunkt-tabelle {
