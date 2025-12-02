@@ -1,14 +1,14 @@
-/* =======================================
-   BASIS-EINSTELLUNGEN & TYPOGRAFIE
-   ======================================= */
+img {
+    max-width: 100%; 
+    height: auto;    
+    display: block; 
+}
 
 h1 {
     font-family: cursive;
     font-style: italic;
     color: red;
     text-align: center;
-    
-    /* Responsivität (clamp) */
     font-size: clamp(32px, 8vw, 67px); 
     letter-spacing: clamp(2px, 1vw, 5px);
     margin: clamp(20px, 4vw, 50px);
@@ -20,8 +20,6 @@ h1 {
 }
 
 .corner-img {
-    /* Diese Klasse ist weiterhin für absolute Positionierung des Bildes, 
-       falls es als reines <img> verwendet wird. */
     position: absolute;
     top: 0;
     right: 0;
@@ -32,7 +30,6 @@ h1 {
     font-weight: bold;
 }
 
-/* Ziel-Hervorhebung (Anker-Links) */
 :target {
     background-color: #ffeb3b;
     color: #000;
@@ -40,30 +37,20 @@ h1 {
     border-radius: 5px;
 }
 
-/* =======================================
-   GRID LAYOUT & ZELLEN-HINTERGRÜNDE
-   ======================================= */
-
 body {
-    /* Allgemeine Einstellungen */
     background-color: #e1e1e1;
     margin: 0; 
     width: 100%;
     min-height: 100vh;
-    
-    /* Grid Definition */
     display: grid;
     gap: 0.5em; 
-    
-    /* Mobile-Layout (1 Spalte) */
     grid-template-columns: 1fr;
     grid-template-rows: auto;
-    
-    /* Area Definition (gestapelt) */
     grid-template-areas:
         "header"
         "logo"
         "suchfeld"
+        "platzhalter"
         "nav"
         "main"
         "aside"
@@ -73,9 +60,9 @@ body {
 .logo { 
     grid-area: logo; 
     background-image: url("bilder/Alphabet_Inc_Logo.png");
-    background-size: contain; /* Skaliert das Bild, sodass es komplett sichtbar ist */
+    background-size: contain; 
     background-repeat: no-repeat;
-    background-position: center; /* Zentriert das Bild in der Zelle */
+    background-position: center; 
 }
 
 header { 
@@ -84,10 +71,8 @@ header {
 
 .suchfeld { 
     grid-area: suchfeld; 
-    
-    /* SUCHFELD / HAUPTLOGO: hauptlogo.png */
     background-image: url("bilder/hauptlogo.png"); 
-    background-size: contain; /* Stellt sicher, dass das Icon skaliert wird */
+    background-size: contain; 
     background-repeat: no-repeat;
     background-position: center; 
 }
@@ -98,7 +83,7 @@ nav {
 
 main { 
     grid-area: main; 
-    background-color: #FFFFFF; /* Hauptinhaltsbereich bleibt weiß */
+    background-color: #FFFFFF; 
     border: 1px solid #ccc;
 }
 
@@ -116,35 +101,19 @@ footer {
     grid-area: footer; 
 }
 
-/* Platzhalter: Auf Mobile nicht sichtbar (wird in der Media Query wieder eingeblendet) */
 .platzhalter {
     grid-area: platzhalter;
-    display: none; 
+    min-height: 1em; 
 }
-
-
-/* =======================================
-   MEDIA QUERY: DESKTOP LAYOUT (ab 768px)
-   ======================================= */
 
 @media (min-width: 768px) {
     body {
-        /* Desktop Grid Definition (3 Spalten) */
         grid-template-columns: 2fr 6fr 2fr;
-        
-        /* HÖHENANPASSUNG: Erste Zeile 8vh für ein besseres Aspect Ratio */
         grid-template-rows: 8vh 5vh 1fr 20vh; 
-        
-        /* Desktop Area Definition */
         grid-template-areas:
             "logo header suchfeld"
             "platzhalter platzhalter platzhalter"
             "nav main aside"
             "footer footer footer";
-    }
-
-    /* Platzhalter auf Desktop wieder sichtbar machen */
-    .platzhalter {
-        display: block; 
     }
 }
