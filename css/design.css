@@ -116,10 +116,12 @@ footer {
     grid-area: platzhalter;
     min-height: 1em; 
     background-color: grey;
-    display: flex;
+    display: grid;
     justify-content: center;
     align-items: center;  
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 0.5em
+    
 }
 
 @media (min-width: 768px) {
