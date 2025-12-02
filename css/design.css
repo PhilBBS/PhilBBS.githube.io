@@ -11,7 +11,8 @@ h1 {
     text-align: center;
     font-size: clamp(32px, 8vw, 67px); 
     letter-spacing: clamp(2px, 1vw, 5px);
-    margin: clamp(20px, 4vw, 50px);
+    margin: 0 clamp(20px, 4vw, 50px); 
+
 }
 
 .centerobject {
