@@ -67,6 +67,7 @@ body {
 
 header { 
     grid-area: header; 
+    background-color:green;
 }
 
 .suchfeld { 
@@ -79,6 +80,7 @@ header {
 
 nav { 
     grid-area: nav; 
+    background-color:yellow;
 }
 
 main { 
@@ -99,11 +101,13 @@ aside {
 
 footer { 
     grid-area: footer; 
+    background-color:red;
 }
 
 .platzhalter {
     grid-area: platzhalter;
     min-height: 1em; 
+    background-color: black;
 }
 
 @media (min-width: 768px) {
