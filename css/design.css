@@ -1,4 +1,14 @@
 /* =======================================
+   GLOBALE EINSTELLUNGEN & RESPONSIVE BILDER
+   ======================================= */
+
+img {
+    max-width: 100%; 
+    height: auto;    
+    display: block; 
+}
+
+/* =======================================
    BASIS-EINSTELLUNGEN & TYPOGRAFIE
    ======================================= */
 
@@ -25,6 +35,7 @@ h1 {
     position: absolute;
     top: 0;
     right: 0;
+    /* max-width: 20% sorgt hier für Skalierung relativ zum Viewport */
     max-width: 20%; 
 }
 
@@ -106,6 +117,7 @@ aside {
     /* Hintergrund-Eigenschaften */
     background-color: rgba(240, 230, 140, 0.5); /* Semi-transparentes Khaki */
     background-image: url("../bilder/tenor.gif"); 
+    /* Für Hintergrundbilder, nutzt man background-size: cover/contain für Responsivität */
     background-size: auto; 
     background-repeat: repeat-y; 
     background-position: center;
