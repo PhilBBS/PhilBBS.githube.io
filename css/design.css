@@ -74,7 +74,7 @@ header {
 .suchfeld { 
     grid-area: suchfeld; 
     background-image: url("../bilder/hauptlogo.png"); 
-    background-size: cover; 
+    background-size: covr; 
     background-repeat: no-repeat;
     background-position: center; 
 }
