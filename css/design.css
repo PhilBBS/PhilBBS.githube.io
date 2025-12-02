@@ -116,6 +116,9 @@ footer {
     grid-area: platzhalter;
     min-height: 1em; 
     background-color: grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
 }
 
 @media (min-width: 768px) {
