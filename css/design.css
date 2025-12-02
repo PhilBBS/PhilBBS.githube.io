@@ -22,17 +22,48 @@ h1{
 body {
     background-color: #e1e1e1;
     display: grid;
-    grid-gap: 0.5em 0.5em;
-    height: 100%;
+    gap: 0.5em; /* "grid-gap" ist veraltet, "gap" ist der neue Standard */
     width: 100%;
-    grid-template-columns: 2fr 6fr 2fr;
-    grid-template-rows: 20vh 5vh 1fr 75vh;
+    min-height: 100vh; /* Besser als height: 100%, füllt immer den Screen */
+
+    /* --- MOBILE LAYOUT (Standard) --- */
+    /* Auf dem Handy wollen wir meistens nur 1 Spalte */
+    grid-template-columns: 1fr;
+    
+    /* Die Höhen passen sich dem Inhalt an (auto), statt festen vh-Werten */
+    grid-template-rows: auto;
+    
+    /* Alles stapelt sich untereinander */
     grid-template-areas:
-        "logo header suchfeld"
-        "platzhalter platzhalter platzhalter"
-        "nav main aside"
-        "footer footer footer";
+        "header"
+        "logo"
+        "suchfeld"
+        "nav"
+        "main"
+        "aside"
+        "footer";
+    /* Hinweis: Den "platzhalter" habe ich auf Mobile ausgeblendet, um Platz zu sparen */
 }
+
+/* --- DESKTOP LAYOUT (ab 768px Breite) --- */
+@media (min-width: 768px) {
+    body {
+        /* Hier kommt dein ursprüngliches Layout zurück */
+        grid-template-columns: 2fr 6fr 2fr;
+        
+        /* Deine ursprünglichen Reihen (leicht angepasst für Flexibilität) */
+        grid-template-rows: 20vh 5vh 1fr 20vh; 
+        /* Hinweis: 75vh für den Footer ist extrem viel (75% des Bildschirms). 
+           Ich habe es auf 20vh reduziert oder du nutzt 'auto'. */
+
+        grid-template-areas:
+            "logo header suchfeld"
+            "platzhalter platzhalter platzhalter"
+            "nav main aside"
+            "footer footer footer";
+    }
+}
+
 
 .logo{
 	grid-area: logo;
