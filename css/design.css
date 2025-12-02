@@ -10,7 +10,8 @@ h1 {
     text-align: center;
     
     /* Responsivität (clamp) */
-    font-size: clamp(32px, 8vw, 67px);
+    /* Schriftgröße: Minimum 32px, Ideal 8% der Breite, Maximum 67px */
+    font-size: clamp(32px, 8vw, 67px); 
     letter-spacing: clamp(2px, 1vw, 5px);
     margin: clamp(20px, 4vw, 50px);
 }
@@ -40,7 +41,7 @@ h1 {
 }
 
 /* =======================================
-   GRID LAYOUT: MOBILE FIRST (STANDARD)
+   GRID LAYOUT & ZELLEN-FARBEN
    ======================================= */
 
 body {
@@ -69,13 +70,33 @@ body {
         "footer";
 }
 
-/* Elementzuweisung */
-.logo       { grid-area: logo; }
-header      { grid-area: header; }
-.suchfeld   { grid-area: suchfeld; }
-nav         { grid-area: nav; }
-main        { grid-area: main; }
-footer      { grid-area: footer; }
+/* Elementzuweisung und Farbvisualisierung (Mobile & Desktop) */
+
+.logo { 
+    grid-area: logo; 
+    background-color: #FFD700; /* Gold */
+}
+
+header { 
+    grid-area: header; 
+    background-color: #ADD8E6; /* Hellblau */
+}
+
+.suchfeld { 
+    grid-area: suchfeld; 
+    background-color: #90EE90; /* Hellgrün */
+}
+
+nav { 
+    grid-area: nav; 
+    background-color: #FFA07A; /* Helles Lachsrot */
+}
+
+main { 
+    grid-area: main; 
+    background-color: #FFFFFF; /* Weiß (Hauptinhaltsbereich) */
+    border: 1px solid #ccc;
+}
 
 aside {
     grid-area: aside;
@@ -83,16 +104,23 @@ aside {
     min-height: 200px;
     
     /* Hintergrund-Eigenschaften */
+    background-color: rgba(240, 230, 140, 0.5); /* Semi-transparentes Khaki */
     background-image: url("../bilder/tenor.gif"); 
     background-size: auto; 
     background-repeat: repeat-y; 
     background-position: center;
 }
 
-/* Platzhalter: Auf Mobile nicht sichtbar, da er nicht in den Areas ist */
+footer { 
+    grid-area: footer; 
+    background-color: #A9A9A9; /* Dunkelgrau */
+}
+
+/* Platzhalter: Auf Mobile nicht sichtbar (wird in der Media Query wieder eingeblendet) */
 .platzhalter {
     grid-area: platzhalter;
     display: none; 
+    background-color: #F08080; /* Heller Korallton */
 }
 
 
