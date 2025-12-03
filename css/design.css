@@ -110,6 +110,7 @@ main {
 
 footer { 
     grid-area: footer; 
+    background-color: #DB8A8A;
 }
 
 @media (min-width: 768px) {
