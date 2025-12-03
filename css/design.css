@@ -74,7 +74,7 @@ body {
     position: sticky;
     display: block;
     width: auto;    
-    height: 15vh;
+    height: 100%;
     grid-area: logo; 
     background-image: url("../bilder/Alphabet_Inc_Logo.png");
     background-size: contain; 
@@ -126,7 +126,7 @@ footer {
 @media (min-width: 768px) {
     body {
         grid-template-columns: 1fr 1fr 5fr 1fr;
-        grid-template-rows: Minmax(75px, 16vh) 5vh 1fr 20vh; 
+        grid-template-rows: Minmax(75px, 16vh) 2vh 1fr 20vh; 
         grid-template-areas:
             "logo header header suchfeld"
             "platzhalter platzhalter platzhalter platzhalter"
