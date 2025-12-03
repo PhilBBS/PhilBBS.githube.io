@@ -6,7 +6,7 @@ img {
 
 h1 {
 
-    font-style: arial;
+    font-style: product sans;
     color: red;
     text-align: center;
     font-size: clamp(32px, 8vw, 67px); 
