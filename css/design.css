@@ -84,6 +84,7 @@ body {
 header { 
     grid-area: header;
     position: sticky;
+    background-color: white;
 }
 
 .suchfeld{ 
@@ -106,6 +107,7 @@ nav {
 main { 
     grid-area: main;
     border: 1px solid #ccc;
+    background-color: white;
 }
 
 footer { 
@@ -115,7 +117,6 @@ footer {
 
 @media (min-width: 768px) {
     body {
-        background-color: white;
         grid-template-columns: 2fr 5fr 2fr;
         grid-template-rows: Minmax(75px, 16vh) 10vh 1fr 20vh; 
         grid-template-areas:
