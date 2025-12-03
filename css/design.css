@@ -54,9 +54,7 @@ body {
     grid-template-columns: 1fr;
     grid-template-rows: auto;
     grid-template-areas:
-        "header"
-        "logo"
-        "suchfeld"
+        "header logo suchfeld"
         "platzhalter"
         "nav"
         "main"
