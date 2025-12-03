@@ -18,6 +18,12 @@ h1 {
     text-overflow: ellipsis;
 }
 
+.zentriert {
+  display: inline-block;   /* Macht die Liste wie ein zentrierter Block */
+  text-align: left;        /* Inhalt der Liste wieder linksbündig */
+  list-style-position: outside; /* Zahlen stehen sauber in einer Spalte */
+}
+
 .centerobject {
     margin-left: auto;
     margin-right: auto;
