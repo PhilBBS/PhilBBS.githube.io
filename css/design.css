@@ -83,7 +83,8 @@ body {
 }
 
 header { 
-    grid-area: header; 
+    grid-area: header;
+    position: sticky;
 }
 
 .suchfeld { 
