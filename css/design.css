@@ -80,12 +80,13 @@ body {
     background-size: contain; 
     background-repeat: no-repeat;
     background-position: top left;
+    background-color: #92B4EC;
 }
 
 header { 
     grid-area: header;
     position: sticky;
-    background-color: white;
+    background-color: #92B4EC;
 }
 
 .suchfeld{ 
@@ -98,6 +99,7 @@ header {
     background-size: contain; 
     background-repeat: no-repeat;
     background-position: top right; 
+    background-color: #92B4EC;
 }
 
 nav { 
