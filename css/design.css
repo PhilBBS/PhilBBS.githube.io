@@ -12,9 +12,9 @@ h1 {
     letter-spacing: clamp(2px, 1vw, 5px);
     margin: 0 clamp(20px, 4vw, 50px); 
     margin-top: 5%;
-    white-space: nowrap; 
+    white-space: nowrap; /*text bleibt iini einer Zeile*/ 
     overflow: hidden; 
-    text-overflow: ellipsis; /*  */
+    text-overflow: ellipsis; /*  wenn zu viel text, dann mit ... abschneiden*/
     justify-self: center;
 }
 
