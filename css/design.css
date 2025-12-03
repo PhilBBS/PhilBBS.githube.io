@@ -14,7 +14,7 @@ h1 {
     margin-top: 5%;
     white-space: nowrap; 
     overflow: hidden; 
-    text-overflow: ellipsis;
+    text-overflow: ellipsis; /*  */
     justify-self: center;
 }
 
@@ -131,7 +131,7 @@ aside {
     display: block;
     width: auto;    
     background-image: url("../bilder/blehcat.gif"); 
-    background-size: cover; 
+    background-size: contain; 
     background-repeat: no-repeat; 
 }
 
