@@ -8,7 +8,7 @@ h1 {
     font-style: product sans;
     color: red;
     text-align: center;
-    font-size: clamp(32px, 9vw, 80px); 
+    font-size: clamp(32px, 9vw, 80px); /*min, gewollt, max*/ 
     letter-spacing: clamp(2px, 1vw, 5px);
     margin: 0 clamp(20px, 4vw, 50px); 
     margin-top: 5%;
