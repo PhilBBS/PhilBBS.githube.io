@@ -134,7 +134,7 @@ footer {
     background-color: #DB8A8A;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
     body {
         grid-template-columns: 1fr 1fr 5fr 1fr 1fr;
         grid-template-rows: Minmax(75px, 16vh) 3vh 1fr 20vh; 
