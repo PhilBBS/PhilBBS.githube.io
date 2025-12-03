@@ -57,7 +57,6 @@ body {
         "platzhalter"
         "nav"
         "main"
-        "aside"
         "footer";
 }
 .platzhalter {
@@ -105,16 +104,6 @@ nav {
 main { 
     grid-area: main;
     border: 1px solid #ccc;
-}
-
-aside {
-    grid-area: aside;
-    height: 100%;
-    min-height: 200px;
-    background-image: url("../bilder/tenor.gif"); 
-    background-size: contain; 
-    background-repeat: repeat-y; 
-    background-position: top;
 }
 
 footer { 
