@@ -129,7 +129,7 @@ footer {
         grid-template-areas:
             "logo header suchfeld"
             "platzhalter platzhalter platzhalter"
-            "nav main aside"
+            "nav main main"
             "footer footer footer";
     }
 }
