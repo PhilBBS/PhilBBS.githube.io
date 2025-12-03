@@ -35,7 +35,9 @@ h1 {
 }
 
 a{
-    color:black
+    color:black;
+    font-weight: bold;
+    text-decoration: underline;
 }
 
 :target {
@@ -107,6 +109,9 @@ main {
     grid-area: main;
     border: 1px solid #ccc;
     background-color: white;
+    justify-content: center; 
+    align-items: center;
+    
 }
 
 footer { 
