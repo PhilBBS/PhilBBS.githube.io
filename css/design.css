@@ -87,7 +87,7 @@ body {
     height: 100%;
     grid-area: logo; 
     background-image: url("../bilder/Alphabet_Inc_Logo.png");
-    background-size: cover; 
+    background-size: contain; 
     background-repeat: no-repeat;
     background-position: top left;
 }
