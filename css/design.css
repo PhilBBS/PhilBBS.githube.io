@@ -67,7 +67,7 @@ body {
     text-align: center;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 0.5em
-    background-color: grey;
+    background-color: #A8A5A5;
 }
 
 .logo { 
@@ -113,6 +113,10 @@ main {
     align-items: center;
     
 }
+
+aside {
+    grid-area: aside;
+    background-color: #DB8A8A;
 
 footer { 
     grid-area: footer; 
