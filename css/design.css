@@ -80,7 +80,6 @@ body {
     background-size: contain; 
     background-repeat: no-repeat;
     background-position: top left;
-    background-color: #DB8A8A;
 }
 
 header { 
@@ -98,7 +97,6 @@ header {
     background-size: contain; 
     background-repeat: no-repeat;
     background-position: top right; 
-    background-color: #DB8A8A;
 }
 
 nav { 
