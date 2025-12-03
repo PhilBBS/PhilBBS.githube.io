@@ -62,10 +62,10 @@ body {
     grid-template-rows: 1fr;
     grid-template-areas:
         "logo header suchfeld"
-        "platzhalter"
-        "nav"
-        "main"
-        "footer";
+        "platzhalter platzhalter platzhalter"
+        "nav nav nav"
+        "main main main"
+        "footer footer footer";
 }
 .platzhalter {
     grid-area: platzhalter;
