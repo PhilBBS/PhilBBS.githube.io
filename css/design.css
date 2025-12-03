@@ -133,12 +133,12 @@ footer {
 
 @media (min-width: 768px) {
     body {
-        grid-template-columns: 1fr 1fr 5fr 1fr;
+        grid-template-columns: 1fr 1fr 5fr 1fr 1fr;
         grid-template-rows: Minmax(75px, 16vh) 3vh 1fr 20vh; 
         grid-template-areas:
-            "logo header header suchfeld"
-            "platzhalter platzhalter platzhalter platzhalter"
-            "nav nav main aside"
-            "footer footer footer footer";
+            "logo header header header suchfeld"
+            "platzhalter platzhalter platzhalter platzhalter platzhalter"
+            "nav nav main aside aside"
+            "footer footer footer footer footer";
     }
 }
