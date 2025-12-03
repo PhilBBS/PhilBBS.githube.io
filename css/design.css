@@ -67,7 +67,7 @@ body {
     text-align: center;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 0.5em;
-    background-color: #A8A5A5;
+    background-color: #DB8A8A;
 }
 
 .logo { 
@@ -80,13 +80,12 @@ body {
     background-size: contain; 
     background-repeat: no-repeat;
     background-position: top left;
-    background-color: #92B4EC;
+    background-color: #DB8A8A;
 }
 
 header { 
     grid-area: header;
     position: sticky;
-    background-color: #92B4EC;
 }
 
 .suchfeld{ 
@@ -99,12 +98,12 @@ header {
     background-size: contain; 
     background-repeat: no-repeat;
     background-position: top right; 
-    background-color: #92B4EC;
+    background-color: #DB8A8A;
 }
 
 nav { 
     grid-area: nav;
-    background-color: #92B4EC;
+    background-color: #DB8A8A;
 }
 
 main { 
