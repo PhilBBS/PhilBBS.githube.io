@@ -129,12 +129,10 @@ aside {
     background-color: #DB8A8A;
     display: block;
     width: auto;    
-    height: 16vh;
     grid-area: suchfeld; 
     background-image: url("../bilder/blehcat.gif"); 
     background-size: contain; 
-    background-repeat: no-repeat;
-    background-position: top right; 
+    background-repeat: no-repeat; 
 }
 
 footer { 
