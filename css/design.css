@@ -130,7 +130,7 @@ aside {
     display: block;
     width: auto;    
     background-image: url("../bilder/blehcat.gif"); 
-    background-size: contain; 
+    background-size: cover; 
     background-repeat: no-repeat; 
 }
 
