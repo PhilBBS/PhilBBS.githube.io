@@ -66,6 +66,7 @@ body {
     text-align: center;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 0.5em
+    background-color: grey;
 }
 
 .logo { 
@@ -99,6 +100,7 @@ header {
 
 nav { 
     grid-area: nav;
+    background-color: #DB8A8A;
 }
 
 main { 
