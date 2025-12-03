@@ -5,7 +5,6 @@ img {
 }
 
 h1 {
-
     font-style: product sans;
     color: red;
     text-align: center;
@@ -17,6 +16,10 @@ h1 {
     overflow: hidden; 
     text-overflow: ellipsis;
 }
+
+p2 {
+    font-size: 20px;
+    
 
 .zentriert {
   display: inline-block;   /* Macht die Liste wie ein zentrierter Block */
