@@ -81,7 +81,7 @@ body {
 }
 
 .logo { 
-    position: fixed;
+    position: sticky;
     display: block;
     width: auto;    
     height: 100%;
@@ -94,11 +94,11 @@ body {
 
 header { 
     grid-area: header;
-    position: fixed;
+    position: sticky;
 }
 
 .suchfeld{ 
-    position: fixed;
+    position: sticky;
     display: block;
     width: auto;    
     height: 16vh;
