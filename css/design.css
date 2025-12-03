@@ -125,12 +125,12 @@ footer {
 
 @media (min-width: 768px) {
     body {
-        grid-template-columns: 2fr 5fr 2fr;
+        grid-template-columns: 1fr 1fr 5fr 2fr;
         grid-template-rows: Minmax(75px, 16vh) 5vh 1fr 20vh; 
         grid-template-areas:
-            "logo header suchfeld"
-            "platzhalter platzhalter platzhalter"
-            "nav main aside"
-            "footer footer footer";
+            "logo header header suchfeld"
+            "platzhalter platzhalter platzhalter platzhalter"
+            "nav nav main aside"
+            "footer footer footer footer";
     }
 }
