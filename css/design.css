@@ -58,14 +58,14 @@ body {
     width: 100%;
     min-height: 100vh;
     display: grid;
-    grid-template-columns: 2fr 5fr 2fr;
-    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 5fr 1fr 1fr;
+    grid-template-rows: Minmax(75px, 16vh) 3vh 1fr 20vh;
     grid-template-areas:
-        "logo header suchfeld"
-        "platzhalter platzhalter platzhalter"
-        "nav nav nav"
-        "main main main"
-        "footer footer footer";
+        "logo header header header suchfeld"
+        "platzhalter platzhalter platzhalter platzhalter platzhalter"
+        "nav nav nav nav nav"
+        "main main main main main"
+        "footer footer footer footer footer";
 }
 .platzhalter {
     grid-area: platzhalter;
