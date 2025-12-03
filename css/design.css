@@ -15,7 +15,7 @@ h1 {
     white-space: nowrap; /*text bleibt iini einer Zeile*/ 
     overflow: hidden; 
     text-overflow: ellipsis; /*  wenn zu viel text, dann mit ... abschneiden*/
-    justify-self: center;
+    text-align: center;
 }
 
 p2 {
