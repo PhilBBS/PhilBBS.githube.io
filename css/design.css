@@ -50,9 +50,8 @@ body {
     width: 100%;
     min-height: 100vh;
     display: grid;
-    gap: 0.5em; 
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
+    grid-template-columns: 2fr 5fr 2fr;
+    grid-template-rows: 1fr;
     grid-template-areas:
         "logo header suchfeld"
         "platzhalter"
@@ -61,7 +60,6 @@ body {
         "aside"
         "footer";
 }
-
 .platzhalter {
     grid-area: platzhalter;
     display: grid;
