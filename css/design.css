@@ -19,8 +19,9 @@ h1 {
 
 p2 {
     font-size: 20px;
-    
 
+}
+    
 .zentriert {
   display: inline-block;   /* Macht die Liste wie ein zentrierter Block */
   text-align: left;        /* Inhalt der Liste wieder linksbündig */
