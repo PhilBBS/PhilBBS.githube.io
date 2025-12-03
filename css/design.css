@@ -66,7 +66,7 @@ body {
     align-items: center;
     text-align: center;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 0.5em
+    gap: 0.5em;
     background-color: #A8A5A5;
 }
 
