@@ -67,7 +67,7 @@ body {
     text-align: center;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 0.5em;
-    background-color: #DB8A8A;
+    background-color: #A8A5A5;
 }
 
 .logo { 
@@ -80,7 +80,6 @@ body {
     background-size: contain; 
     background-repeat: no-repeat;
     background-position: top left;
-    background-color: #DB8A8A;
 }
 
 header { 
